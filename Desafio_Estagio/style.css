@@ -1,0 +1,40 @@
+body{
+    margin: 0%;
+    padding: 0%;
+
+    background-image: url('https://i.pinimg.com/564x/eb/99/7d/eb997d11bd0254c144f93bac4bfd3089.jpg');
+    
+    
+
+}
+
+  td,tr, table{
+
+
+      border: 1px solid black;
+      background-color: rgba(255, 255, 255, 0.233);
+      color: black;
+  }
+
+  button{
+        
+        border-radius: 5px;
+        color: #000;
+        height: 40px;
+        width: 10%;
+        object-position: center;
+        text-align: center;
+        background-color: #eaeaea;
+        
+
+
+  }
+
+    button:hover{
+
+        color: #fff;
+        background-color: #000;
+        transition-property: all;
+        transition-duration: 0.5s;
+        
+    }
