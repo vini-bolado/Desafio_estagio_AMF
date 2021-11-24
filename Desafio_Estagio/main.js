@@ -39,7 +39,7 @@ function criaLinha(infos) {
     tdnum.innerHTML = infos.num
 
     //Disposição que vai aparecer na tabela
-
+    
    linha.appendChild(tdbairro);
    linha.appendChild(tdcidade);
    linha.appendChild(tdrua);
@@ -53,7 +53,27 @@ function criaLinha(infos) {
 
     //aqui a maneira de chamar a função com o sort para poder ordenar a tabela
 
-function main(){
+
+
+
+    function main(){
+    
+        let imoveis = fazGet("https://api.estagio.amfernandes.com.br/imoveis");
+        let orden = JSON.parse(imoveis);
+        let tabela = document.getElementById("tabela");
+    
+     
+        let infos = orden;
+        
+        infos.forEach(element => {
+            let linha = criaLinha(element);
+            tabela.appendChild(linha);  
+        });
+    
+    }
+
+
+function main1(){
     
     let imoveis = fazGet("https://api.estagio.amfernandes.com.br/imoveis");
     let orden = JSON.parse(imoveis);
