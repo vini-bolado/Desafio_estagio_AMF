@@ -47,7 +47,6 @@ function criaLinha(infos) {
    linha.appendChild(tdcep);
    linha.appendChild(tdnum);
 
-
    return linha;
 }
 
@@ -62,7 +61,6 @@ function criaLinha(infos) {
         let orden = JSON.parse(imoveis);
         let tabela = document.getElementById("tabela");
     
-     
         let infos = orden;
         
         infos.forEach(element => {
@@ -87,6 +85,7 @@ function main1(){
         }   else{
             return true;
         }
+        
     })
  
     let infos = orden;

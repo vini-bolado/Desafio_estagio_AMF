@@ -5,69 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Desafio AMF</title>
-    
+
 </head>
 
-<!-- pra dxar o back movimentando -->
+  <body>
 
-<style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
+   
+   <header>   
+     
+    <button type="button" onclick="location.reload();">Resetar</button>
 
-    .text {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700; 
-      font-size: 5rem;
-      color: rgb(68, 9, 65);
-      border: 3px solid rgba(255, 255, 255, 0.39);
-      padding: 2rem 4rem;
-      background-color: rgba(165, 122, 66, 0.241);
-      
-    }
-
-    .gradient {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      width: 100vw;
-
-
-      background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490);
-      background-size: 300% 300%;
-      animation: colors 15s ease infinite;
-    }
-
-    @keyframes colors {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .text {
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-      }
-    }
-
-
-</style>
-
-
-  <body class="gradient">
-
-    <button onclick="location.href = 'http://127.0.0.1:5500/Desafio_Estagio/index2.html';" id="myButton" class="float-left submit-button"><h1 class="text">Imoveis</h1></button>
+    <button type="button" onclick="main1()">Dados dos imóveis</button> 
     
-  </body>
+    <button type="button" onclick="main1()">Ordenar Bairro</button>
+
+    <button type="button" onclick="main2()">Ordenar Cidade</button>
+       
+    <button type="button" onclick="main3()">Ordenar Rua</button>
+
+    <button type="button" onclick="main4()">Ordenar Nome</button>
+
+    <button type="button" onclick="main5()">Ordenar CEP</button>
+
+    <button type="button" onclick="main6()">Ordenar Num</button>
+
+  </header>
+
+  <main>
+ 
+    <table id="tabela"></table>
+
+    <script src="main.js"></script>
+
+  </main>
+
+
+</body>
+
 </html>
